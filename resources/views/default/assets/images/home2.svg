@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="katman_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="600px" height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<g>
+				<defs>
+					<circle id="SVGID_1_" cx="250.737" cy="47.141" r="41.638"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  overflow="visible"/>
+				</clipPath>
+				<circle clip-path="url(#SVGID_2_)" fill="#667EEA" cx="250.737" cy="47.141" r="41.638"/>
+			</g>
+			<g>
+				<defs>
+					<circle id="SVGID_3_" cx="250.737" cy="47.141" r="41.638"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  overflow="visible"/>
+				</clipPath>
+				<polygon clip-path="url(#SVGID_4_)" fill="#E9F2F4" points="264.701,3.523 250.737,47.141 210.641,8.619 267.434,-4.149 				"/>
+			</g>
+			<g>
+				<defs>
+					<circle id="SVGID_5_" cx="250.737" cy="47.141" r="41.638"/>
+				</defs>
+				<clipPath id="SVGID_6_">
+					<use xlink:href="#SVGID_5_"  overflow="visible"/>
+				</clipPath>
+				<polygon clip-path="url(#SVGID_6_)" fill="#508CFF" points="264.701,3.523 250.737,47.141 298.313,17.868 267.434,-4.149 				
+					"/>
+			</g>
+			<g>
+				<defs>
+					<circle id="SVGID_7_" cx="250.737" cy="47.141" r="41.638"/>
+				</defs>
+				<clipPath id="SVGID_8_">
+					<use xlink:href="#SVGID_7_"  overflow="visible"/>
+				</clipPath>
+				<polygon clip-path="url(#SVGID_8_)" fill="#52E6C6" points="250.737,88.779 250.737,47.141 298.313,17.868 301.941,67.396 
+					260.543,94.5 				"/>
+			</g>
+		</g>
+		<g>
+			<rect x="369.223" y="119.678" fill="#E9F2F4" width="82.158" height="81.344"/>
+			<rect x="381.529" y="132.029" fill="#FFFFFF" width="28.771" height="58.118"/>
+			<rect x="369.223" y="104.132" fill="none" stroke="#E9F2F4" stroke-miterlimit="10" width="82.158" height="15.546"/>
+			<g>
+				<circle fill="#52E6C6" cx="431.26" cy="141.519" r="10.218"/>
+			</g>
+			<g>
+				<polygon fill="#FFFFFF" points="430.451,145.541 425.723,139.456 430.007,141.247 439.856,132.633 				"/>
+			</g>
+			<g>
+				<circle fill="#52E6C6" cx="431.26" cy="171.84" r="10.218"/>
+			</g>
+			<g>
+				<polygon fill="#FFFFFF" points="430.451,175.862 425.723,169.778 430.007,171.568 439.856,162.954 				"/>
+			</g>
+		</g>
+		<g>
+			<rect x="510.183" y="46.048" fill="#52E6C6" width="14.148" height="29.755"/>
+			<rect x="530.908" y="57.207" fill="#52E6C6" width="14.148" height="18.597"/>
+			<rect x="551.636" y="48.382" fill="#52E6C6" width="14.148" height="27.422"/>
+			<rect x="572.362" y="27.288" fill="#52E6C6" width="14.147" height="48.516"/>
+			<g>
+				<g>
+					<polyline fill="none" stroke="#99E6CF" stroke-miterlimit="10" points="510.183,36.118 524.331,31.17 537.984,36.118 
+						577.237,4.532 					"/>
+					<g>
+						<polygon fill="#99E6CF" points="579.438,2.762 577.356,6.523 577.072,4.665 575.317,3.99 						"/>
+					</g>
+				</g>
+			</g>
+			<polyline fill="none" stroke="#E9F2F4" stroke-width="0.25" stroke-miterlimit="10" points="496.362,87.005 600.507,87.005 
+				600.507,23.61 			"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,642 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+.hoveri i{
+  visibility:hidden;
+}
+.hoveri:hover i {
+ visibility:visible;
+}
+.hoverimg:hover img {
+  transition: .3s all;
+ filter: brightness(0.8) blur(1px);
+}
+.header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+.header .logo {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.header #menu-action {
+  display: block;
+  float: left;
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header #menu-action i {
+  display: inline-block;
+  margin: 0 5px;
+}
+.header #menu-action span {
+    font-weight: bold;
+  width: 0px;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header #menu-action:hover {
+      background-color: #eeeeee4a;
+}
+.header #menu-action.active {
+  width: 250px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.header #menu-action.active span {
+  display: inline;
+  width: auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 50px;
+  height: 100%;
+  width: 60px;
+  background: #fff;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar.active{
+  width: 250px !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul li {
+  display: block;
+}
+.sidebar ul li a {
+    border-radius: 15px;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #a2a2a2;
+  text-align: left;
+}
+.menulogo {
+        float: right;
+       margin-right: 15px;
+    margin-top: 5px
+}
+.header span{
+    color: #a2a2a2;
+    float: left;
+}
+.sidebar ul li a i {
+  display: inline-block;
+  padding-left:8px; 
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  -webkit-animation-duration: 0.7s;
+  -moz-animation-duration: 0.7s;
+  -o-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+    text-transform: uppercase;
+        background: linear-gradient(330deg, #667eea 0%, #667eea 25%, #764ca3 50%, #9952e0 75%, #764ba3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+}
+.sidebar ul li a span {
+        font-size: 15px;
+  display: inline-block;
+  height: 60px;
+        padding-left: 9px;
+  line-height: 60px;
+}
+.sidebar ul{
+    overflow-y: scroll;
+    height: 90%;
+}
+.sidebar ul::-webkit-scrollbar {
+  width: 0px;
+}
+
+.sidebar ul li a:hover {
+     background-color: #eeeeee4a;
+}
+.sidebar ul li a:hover i {
+  -webkit-animation-name: swing;
+  -moz-animation-name: swing;
+  -o-animation-name: swing;
+  animation-name: swing;
+}
+.content-main {
+    position: relative;  
+    display: block;  
+   top: 50px;  
+    left: 0;  
+    padding: 15px;  
+    padding-left: 75px; 
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#menu-action , .sidebar {
+    box-shadow: 14px 20px 20px 0px #00000008;
+}
+.content-main.active {
+  padding-left: 275px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.content-main .jumbotron {
+  background-color: #fff;
+  padding: 30px !important;
+  border: 1px solid #dfe8f1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.content-main .jumbotron h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+}
+@-webkit-keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    -ms-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    -ms-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    -ms-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    -ms-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    -ms-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+.swing {
+  -webkit-transform-origin: top center;
+  -ms-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+}
+.activeSidebar{
+        box-shadow: 1px 1px 20px 0px #2525ff21;
+    border-radius: 15px;
+}
+.sidebar ul li{
+        padding: 0px 15px;
+}
+.activeSidebar span{
+    color: black;
+}
+.sidebar li a span{
+    
+    font-weight: bold;
+}
+.logos .logo{
+        width: 30px;
+    margin-top: 10px;
+}
+.logos text{
+    color: #a2a2a2;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.logos ul{
+    float: right;
+        margin-top: 7px;
+    margin-right: 10px;
+}
+
+[type="datetime-local"] {
+  background:#fff url(../images/calendar.png)  95% 50% no-repeat ;
+}
+[type="datetime-local"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.datebox {
+  border: 1px solid #754ca41a!important;
+  border-radius: 15px;
+  padding: 8px 16px;
+  box-shadow: 0 0 10px 0rem rgba(103, 125, 232, 0.13);
+  width: 100%;
+  color:#5e7081!important;
+  font-family: Arial;
+}
+
+
+    .content-main {
+        max-width: 1920px;
+    }
+
+    .form-style-7 {
+        /*max-width: 400px;*/
+        border-radius: 2px;
+    }
+    
+    .form-style-7 ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .form-style-7 li {
+        display: block;
+        padding: 9px;
+        border: 1px solid #f5f7fb!important;
+        box-shadow: 0 0 10px 0rem rgba(103, 125, 232, 0.13);
+        margin-bottom: 30px;
+        border-radius: 3px;
+    }
+    
+    .form-style-7 li:last-child {
+        border: none;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    
+    .form-style-7 li > label {
+        display: block;
+        float: left;
+        margin-top: -20px;
+        background: #FFFFFF;
+        height: 22px;
+        padding: 2px 5px 2px 5px;
+        overflow: hidden;
+        line-height: 1.6;
+        font-size: .8rem;
+        color: #5e7081!important;
+        font-family: Arial;
+    }
+    
+    .form-style-7 input[type="text"],
+    .form-style-7 input[type="date"],
+    .form-style-7 input[type="datetime"],
+    .form-style-7 input[type="email"],
+    .form-style-7 input[type="number"],
+    .form-style-7 input[type="search"],
+    .form-style-7 input[type="time"],
+    .form-style-7 input[type="url"],
+    .form-style-7 input[type="password"],
+    .form-style-7 textarea,
+    .form-style-7 select {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        display: block;
+        outline: none;
+        border: none;
+        height: 25px;
+        line-height: 1.6;
+        font-size: .8rem;
+        color: #5e7081!important;
+        font-family: Arial;
+        padding: 0;
+    }
+    
+    .form-style-7 input[type="text"]:focus,
+    .form-style-7 input[type="date"]:focus,
+    .form-style-7 input[type="datetime"]:focus,
+    .form-style-7 input[type="email"]:focus,
+    .form-style-7 input[type="number"]:focus,
+    .form-style-7 input[type="search"]:focus,
+    .form-style-7 input[type="time"]:focus,
+    .form-style-7 input[type="url"]:focus,
+    .form-style-7 input[type="password"]:focus,
+    .form-style-7 textarea:focus,
+    .form-style-7 select:focus {}
+    
+    .form-style-7 li > span {
+        background: rgb(245, 247, 251) !important;
+        display: block;
+        padding: 3px;
+        margin: 0 -9px -9px -9px;
+        text-align: center;
+        color: #C0C0C0;
+        font-size: 11px;
+    }
+    
+    .form-style-7 textarea {
+        resize: none;
+    }
+    
+    .form-style-7 input[type="submit"],
+    .form-style-7 input[type="button"] {
+        background: #2471FF;
+        border: none;
+        padding: 10px 20px 10px 20px;
+        border-bottom: 3px solid #5994FF;
+        border-radius: 3px;
+        color: #D2E2FF;
+    }
+    
+    .form-style-7 input[type="submit"]:hover,
+    .form-style-7 input[type="button"]:hover {
+        background: #6B9FFF;
+        color: #fff;
+    }
+
+
+.select {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0px;
+  border-radius: 3px;
+  font-size: 12px;
+  background: rgb(245, 247, 251);
+  /*box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);*/
+}
+.select > i.toggle {
+  position: absolute;
+  z-index: 4;
+  right: 1.5em;
+  top: 1.6em;
+  color: #ccc;
+}
+.select .title, .select .placeholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 2em;
+  background: rgb(245, 247, 251);
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  cursor: pointer;
+}
+.select > input {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+.select > input:checked ~ i.toggle.icon-arrow-down {
+  display: none;
+}
+.select > input:checked ~ i.toggle.icon-arrow-up {
+  display: block;
+}
+.select > input:checked div.options label.option .title {
+  display: none !important;
+}
+.select > input:not(:checked) {
+  z-index: 4;
+}
+.select > input:not(:checked) ~ label.option > span.title {
+  display: none;
+}
+.select > input:not(:checked) ~ i.toggle.icon-arrow-up {
+  display: none;
+}
+.select > input:not(:checked) ~ i.toggle.icon-arrow-down {
+  display: block;
+}
+.select > input:disabled {
+  cursor: no-drop;
+}
+.select > span.placeholder {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  color: #758494;
+  border-top: 0px;
+}
+.select label.option {
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  transition: all 1s ease-out;
+}
+.select label.option span.title {
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s ease-out;
+}
+.select label.option span.title i.icon {
+  padding-right: 8px;
+  color: rgba(146, 168, 209, 1);
+}
+.select label.option span.title:hover {
+  color: #fff;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, .1);
+}
+.select label.option input {
+  display: none;
+}
+.select label.option input:checked ~ span.title {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: 0px;
+  font-size: 12px;
+  background: rgb(245, 247, 251);
+  border-top: 0px;
+  box-shadow: none;
+  color: inherit;
+  width: 100%;
+}
+.select label.option input:disabled ~ span.title {
+  background: #f9f9f9 !important;
+  color: #aaa;
+}
+.select label.option input:disabled ~ span.title:hover {
+  color: #aaa;
+  background: none;
+  cursor: no-drop;
+}
+.select2 {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  width: 330px;
+  height: 100%;
+  border-bottom: 0px;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, .5);
+}
+.select2 i.toggle {
+  position: absolute;
+  z-index: 4;
+  right: 1.5em;
+  top: 1.6em;
+  color: #ccc;
+}
+.select2 .title, .select2 .placeholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 2em;
+  background: rgba(255, 255, 255, 1);
+  border-top: 1px solid rgba(0, 0, 0, .05);
+  cursor: pointer;
+}
+.select2 > label > input {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+.select2 > label > input:checked {
+  z-index: 2;
+}
+.select2 > label > input:checked ~ i.toggle.icon-plus {
+  display: none;
+}
+.select2 > label > input:checked ~ i.toggle.icon-minus {
+  display: block;
+}
+.select2 > label > input:not(:checked) ~ i.toggle.icon-minus {
+  display: none;
+}
+.select2 > label > input:not(:checked) ~ i.toggle.icon-plus {
+  display: block;
+}
+.select2 > label > input:not(:checked) ~ label.option input:not(:checked) ~ .title {
+  display: none !important;
+}
+.select2 > label > input:disabled {
+  cursor: no-drop;
+}
+.select2 label > span.placeholder {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  color: #999;
+  border-top: 0px;
+}
+.select2 label.option {
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  transition: all 1s ease-out;
+}
+.select2 label.option span.title {
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s ease-out;
+}
+.select2 label.option span.title i.icon {
+  padding-right: 8px;
+  color: rgba(146, 168, 209, 1);
+}
+.select2 label.option span.title:hover {
+  color: #fff;
+  background: rgba(146, 168, 209, .5);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, .1);
+}
+.select2 label.option input {
+  display: none;
+}
+.select2 label.option input:checked ~ span.title {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  top: 0px;
+  font-size: 12px;
+  background: #fff;
+  border-top: 0px;
+  box-shadow: none;
+  color: inherit;
+  width: 100%;
+}
+.select2 label.option input:disabled ~ span.title {
+  background: #f9f9f9 !important;
+  color: #aaa;
+}
+.select2 label.option input:disabled ~ span.title:hover {
+  color: #aaa;
+  background: none;
+  cursor: no-drop;
+}
+.bot {
+    margin-bottom: 0px!important;
+}
